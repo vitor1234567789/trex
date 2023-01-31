@@ -77,7 +77,7 @@ function draw() {
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
   
-    if(touches.length>0||keyDown("space") && trex.y >= height - 70) {
+    if(touches.length>0||keyDown("space") && trex.y >= height - 120) {
       trex.velocityY = -12;
       touches = []
     }
